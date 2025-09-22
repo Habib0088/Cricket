@@ -1,0 +1,10 @@
+import "./App.css";
+
+function App() {
+  return <>
+<button className="btn">Default</button>
+
+  </>;
+}
+
+export default App;
