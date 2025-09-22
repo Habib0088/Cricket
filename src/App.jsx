@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <Suspense fallback={<h2>Loading....</h2>}>
+      <Suspense fallback={<h2 className="text-center font-bold">Loading  .........</h2>}>
         <Playes jsonData={jsonData}></Playes>
       </Suspense>
     </>
