@@ -1,0 +1,130 @@
+[
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",
+    "name": "Ab Diveliers",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 120000,
+    "rating": 8.5
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Daniel Brooks",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 150000,
+    "rating": 8.9
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",   
+     "name": "Ali Khan",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm fast",
+    "price": 110000,
+    "rating": 7.8
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Chris Johnson",
+    "country": "England",
+    "role": "Wicket-Keeper",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 130000,
+    "rating": 8.2
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Ravi Sharma",
+    "country": "India",
+    "role": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 95000,
+    "rating": 7.5
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Michael Scott",
+    "country": "South Africa",
+    "role": "All-Rounder",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 160000,
+    "rating": 9.0
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Khalid Rahman",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 105000,
+    "rating": 7.9
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Tom Richardson",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm spin",
+    "price": 125000,
+    "rating": 8.1
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Suresh Nair",
+    "country": "India",
+    "role": "All-Rounder",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium-fast",
+    "price": 140000,
+    "rating": 8.7
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Ethan James",
+    "country": "England",
+    "role": "Batsman",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 100000,
+    "rating": 7.6
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Hashim Qureshi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 135000,
+    "rating": 8.4
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Steven White",
+    "country": "Australia",
+    "role": "Wicket-Keeper",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 145000,
+    "rating": 8.8
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Mehedi Hasan",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 90000,
+    "rating": 7.3
+  },
+  {
+    "image": "https://p.imgci.com/db/PICTURES/CMS/220400/220451.jpg",    "name": "Liam Cooper",
+    "country": "New Zealand",
+    "role": "All-Rounder",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm medium",
+    "price": 155000,
+    "rating": 8.6
+  }
+]
