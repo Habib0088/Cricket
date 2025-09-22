@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import Playerscard from "./Playerscard";
-import head from "./"
+
+import hear from "/"
 
 const Playes = ({ jsonData }) => {
   let data = use(jsonData);
@@ -24,7 +25,7 @@ const Playes = ({ jsonData }) => {
           <h2 className="card-title font-bold inline ml-2">Virat Kholi</h2>
           <div className="flex justify-between">
                 <div>
-                    <img className="w-[50px] h-[50px] bg-black mr-7" src='./report.jpg' alt="" />
+                    <img className="w-[50px] h-[50px] bg-black mr-7" src={'./user 1.jpg'} alt="" />
                     <span>India</span>
                 </div>
                 <button className="btn">All-Rounder</button>
