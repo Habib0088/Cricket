@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./assets/component/nav/Nav";
 import Playes from "./assets/component/players/Playes";
 import Selected from "./assets/component/selectedPlayers/Selected";
+  import { ToastContainer} from 'react-toastify';
 
 let fetchData = async () => {
   let res = await fetch("./../public/players.json");
@@ -12,7 +13,7 @@ let fetchData = async () => {
 let jsonData = fetchData();
 
 function App() {
-  let [availableBalance, setAvailableBalance] = useState(500000);
+  let [availableBalance, setAvailableBalance] = useState(5000000000000000);
   let [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
   let removedPlayers=(para)=>{
@@ -74,6 +75,7 @@ function App() {
       ) : (
         <Selected removedPlayers={removedPlayers} purchasedPlayers={purchasedPlayers}></Selected>
       )}
+      <ToastContainer />
     </>
   );
 }

@@ -7,8 +7,11 @@ const Selected = ({purchasedPlayers, removedPlayers}) => {
     return (
        <div>
         {
-            purchasedPlayers.map(player=><SelectedPlayersList removedPlayers={removedPlayers} player={player}></SelectedPlayersList>)
+            purchasedPlayers.length?purchasedPlayers.map(player=><SelectedPlayersList removedPlayers={removedPlayers} player={player}></SelectedPlayersList>):
+
+            <h1 className='text-center text-6xl mt-[200px] font-bold'>Ops!! <br /> Goto the previous page😊</h1>
         }
+    
        </div>
     );
 };

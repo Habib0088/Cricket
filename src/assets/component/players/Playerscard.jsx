@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 const Playerscard = ({ item,availableBalance,setAvailableBalance,setPurchasedPlayers, purchasedPlayers }) => {
@@ -20,7 +21,12 @@ const Playerscard = ({ item,availableBalance,setAvailableBalance,setPurchasedPla
       return;
     }
     else{
-      setPurchasedPlayers([...purchasedPlayers, item])
+      if(purchasedPlayers.length===6){
+        toast("Your Selection is Over")
+      }
+      else{
+        setPurchasedPlayers([...purchasedPlayers, item])
+      }
     // setIsSelected(isSelected===false)
     }
   }
@@ -29,7 +35,7 @@ const Playerscard = ({ item,availableBalance,setAvailableBalance,setPurchasedPla
   let handleAvailableBalance=(price)=>{
 
       if(availableBalance<price){
-        alert("You have not enough Balance")
+        toast("You have not enough Balance")
         return; 
       }
       else{
