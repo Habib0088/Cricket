@@ -13,7 +13,7 @@ let fetchData = async () => {
 let jsonData = fetchData();
 
 function App() {
-  let [availableBalance, setAvailableBalance] = useState(5000000000000000);
+  let [availableBalance, setAvailableBalance] = useState(50000000);
   let [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
   let removedPlayers=(para)=>{
