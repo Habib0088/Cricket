@@ -1,10 +1,15 @@
 import React from 'react';
+import SelectedPlayersList from '../SelecterdPlayersList/SelectedPlayersList';
 
-const Selected = () => {
+const Selected = ({purchasedPlayers, removedPlayers}) => {
+    console.log(purchasedPlayers);
+    
     return (
-        <div>
-            <h1>Selected players are here</h1>
-        </div>
+       <div>
+        {
+            purchasedPlayers.map(player=><SelectedPlayersList removedPlayers={removedPlayers} player={player}></SelectedPlayersList>)
+        }
+       </div>
     );
 };
 

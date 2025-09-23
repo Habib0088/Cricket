@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 
-const Playerscard = ({ item,availableBalance,setAvailableBalance }) => {
-  let [isSelected, setIsSelected] = useState(true);
-  let selection = () => {
-    setIsSelected(!isSelected);
-  };
+
+const Playerscard = ({ item,availableBalance,setAvailableBalance,setPurchasedPlayers, purchasedPlayers }) => {
+
+
+  
   let {
     name,
     image,
@@ -15,6 +14,28 @@ const Playerscard = ({ item,availableBalance,setAvailableBalance }) => {
     rating,
     bowlingStyle,
   } = item;
+
+  let selection=()=>{
+    if(availableBalance<price){
+      return;
+    }
+    else{
+      setPurchasedPlayers([...purchasedPlayers, item])
+    // setIsSelected(isSelected===false)
+    }
+  }
+
+  
+  let handleAvailableBalance=(price)=>{
+
+      if(availableBalance<price){
+        alert("You have not enough Balance")
+        return; 
+      }
+      else{
+        setAvailableBalance(availableBalance-price)
+      }
+  }
 
   return (
     <div className="">
@@ -51,14 +72,14 @@ const Playerscard = ({ item,availableBalance,setAvailableBalance }) => {
             <span className="font-bold">
               Price $ <span>{price}</span>
             </span>
-            <button
+            <button disabled={purchasedPlayers.includes(item)}
               onClick={() => {
                 selection()
-                setAvailableBalance(availableBalance-price)
+                handleAvailableBalance(price)
               }}
               className="bg-gray-300 px-2 py-1 rounded-md"
             >
-              {isSelected ? "Choose Player" : "Selected"}
+              {purchasedPlayers.includes(item) ?"Selected": "Choose Player" }
             </button>
           </div>
           <div className="card-actions text-end mt-4">
@@ -71,5 +92,6 @@ const Playerscard = ({ item,availableBalance,setAvailableBalance }) => {
     </div>
   );
 };
+
 
 export default Playerscard;

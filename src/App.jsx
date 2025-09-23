@@ -9,10 +9,22 @@ let fetchData = async () => {
   return res.json();
 };
 
-  let jsonData = fetchData();
+let jsonData = fetchData();
 
 function App() {
   let [availableBalance, setAvailableBalance] = useState(500000);
+  let [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  let removedPlayers=(para)=>{
+    let removedPlayerData=purchasedPlayers.filter(ply=> ply.id !== para.id)
+    console.log(removedPlayerData);
+    setPurchasedPlayers(removedPlayerData)
+
+    setAvailableBalance(availableBalance+para.price)
+    
+    
+  }
+
 
   let [toogle, setToogle] = useState(true);
   return (
@@ -20,7 +32,11 @@ function App() {
       <Nav availableBalance={availableBalance}> </Nav>
 
       <div className="flex justify-between max-w-[1250px] m-auto">
-        <h2 className="font-bold text-2xl">Avilable Players</h2>
+        <h2 className="font-bold text-2xl">{
+          toogle?"Available Players": `Selected Players(${purchasedPlayers.length}/6)`
+          
+          
+          }</h2>
         <div className="flex font-bold">
           <button
             onClick={() => setToogle(true)}
@@ -36,7 +52,7 @@ function App() {
               toogle === false ? "bg-[#E7FE29]" : ""
             }`}
           >
-            Selected (<span>0</span>)
+            Selected (<span>{purchasedPlayers.length}</span>)
           </button>
         </div>
       </div>
@@ -47,10 +63,16 @@ function App() {
             <h2 className="text-center font-bold">Loading .........</h2>
           }
         >
-          <Playes jsonData={jsonData} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance}></Playes>
+          <Playes
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
+            jsonData={jsonData}
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+          ></Playes>
         </Suspense>
       ) : (
-        <Selected></Selected>
+        <Selected removedPlayers={removedPlayers} purchasedPlayers={purchasedPlayers}></Selected>
       )}
     </>
   );
