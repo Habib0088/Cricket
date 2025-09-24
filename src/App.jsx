@@ -73,7 +73,7 @@ function App() {
           ></Playes>
         </Suspense>
       ) : (
-        <Selected removedPlayers={removedPlayers} purchasedPlayers={purchasedPlayers}></Selected>
+        <Selected toogle={toogle} setToogle={setToogle} removedPlayers={removedPlayers} purchasedPlayers={purchasedPlayers}></Selected>
       )}
       <ToastContainer />
     </>
